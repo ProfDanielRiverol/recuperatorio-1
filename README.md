@@ -1,59 +1,66 @@
+# Parcial Programación III - Tienda de Frutas
 
-# Examen Parcial: Desarrollo de un E-commerce (Div.132)
+Este proyecto consiste en el desarrollo de un frontend para una tienda de frutas, como parte del examen parcial de la materia Programación III.
 
-## Objetivo
+## Instrucciones Generales
 
-Desarrollar un sitio web de un e-commerce sencillo donde se apliquen los conocimientos de:
-- HTML5 (etiquetas semánticas)
-- CSS (buenas prácticas)
-- Bootstrap (diseño responsive)
-- JavaScript (dinamismo en el sitio)
+- Desarrolla los puntos en el orden indicado.
+- Se valorará un código limpio, bien comentado y estructurado.
+- Recuerda utilizar comentarios para separar bloques de código.
 
-## Requisitos del Sitio
+## Descripción del Proyecto
 
-### 1. **Estructura y Diseño**
+En este parcial, deberás construir el frontend de una tienda de frutas.
 
-- Utilizar etiquetas semánticas de HTML5 para estructurar el contenido de manera correcta (header, main, section, article, footer, etc.).
-- Aplicar CSS propio y la librería Bootstrap para un diseño responsive.
-- Incorporar buenas prácticas en la organización de los archivos (estructura de carpetas, nombres de clases y IDs).
+### Pasos a seguir:
 
-### 2. **Funciones Principales**
+1. Almacenar tus datos personales en un objeto e imprimir tu nombre en el `<nav>` del HTML y en la consola.
+2. Crear un array de objetos que representen las frutas, cada una con id, nombre, precio y ruta de imagen.
+3. Imprimir los productos en pantalla mediante una función, que deberá ser invocada en `init()`.
+4. Implementar una función de filtro, que se dispare al escribir en un campo input, filtrando los productos que coincidan.
+5. **EXTRA (opcional):** Implementar la funcionalidad de carrito.
 
-- **Mostrar Productos**: Obtener y mostrar una lista de productos desde una API pública. Puedes utilizar la siguiente API como referencia:
-  - [https://productsapi-i6bs.onrender.com/products](https://productsapi-i6bs.onrender.com/products)
-  - O utilizar cualquier otra API pública de productos.
+## Puntos Detallados
 
-- **Barra de Búsqueda**: Implementar una barra de búsqueda que permita filtrar productos por nombre o categoría.
+### Punto 1: Array de Frutas
 
-- **Detalles del Producto**: Cada producto debe mostrar, al menos:
-  - Nombre
-  - Imagen
-  - Precio
-  - Un botón de "Agregar al carrito"
+Crea un array de 10 frutas, cada objeto debe tener las siguientes claves:
+- `id`: Identificador único.
+- `nombre`: Nombre de la fruta.
+- `precio`: Precio de la fruta.
+- `ruta`: Ruta de la imagen correspondiente en la carpeta `img`.
 
-### 3. **Interactividad con JavaScript**
+### Punto 2: Datos del Alumno
 
-- **Agregar al Carrito**: Al hacer clic en el botón "Agregar al carrito", el producto debe añadirse al carrito de compras.
-- **Mostrar Carrito**: Implementar una sección que muestre los productos añadidos al carrito y el total de la compra.
-- **Eliminar del Carrito**: El carrito debe permitir eliminar productos.
-- **Simulación de Compra**: No es necesario realizar un checkout real, pero debe haber una simulación que muestre los productos en el carrito.
+Modifica la función inicializadora `init()` para que imprima tu nombre y apellido en el `<nav>` y en la consola, usando un objeto con tus datos personales (DNI, nombre, apellido).
 
-## Estilo y Buenas Prácticas
+### Punto 3: Mostrar Productos
 
-- Utilizar Bootstrap para lograr un diseño responsive y amigable con el usuario.
-- Mantener una buena separación entre HTML, CSS y JavaScript.
-- Asegurarse de que el código siga principios de legibilidad y organización.
+Implementa una función que recorra el array de frutas y muestre cada producto en pantalla siguiendo el esquema HTML:
 
-## Evaluación
+```html
+<div class="product-card">
+    <img src="" alt="">
+    <h3></h3>
+    <p>$</p>
+    <button class="add-to-cart">Agregar al carrito</button>
+</div>
+```
 
-1. **Estructura y Uso de Etiquetas Semánticas**
-   - Se evaluará la correcta aplicación de las etiquetas semánticas y la estructura del sitio.
+**EXTRA:** Se valorará el uso de destructuring.
 
-2. **Aplicación de CSS y Bootstrap**
-   - Se evaluará el uso de Bootstrap y el estilo propio para lograr un diseño responsive y estético.
+### Punto 4: Filtro de Productos
 
-3. **Funcionalidad de la API y Manipulación de Productos**
-   - Se evaluará la correcta integración con la API para mostrar y filtrar productos.
+Escribe una función de filtro que capture los valores de un campo input (por ejemplo, mediante un evento `keyup`), y filtre los productos que coincidan con los valores introducidos.
 
-4. **Interactividad y Manejo del Carrito**
-   - Se evaluará el funcionamiento del carrito y las interacciones con JavaScript.
+### Punto 5 EXTRA: Carrito de Compras
+
+**(Opcional, solo si has completado los puntos anteriores)**
+
+Implementa la funcionalidad de carrito de compras. **EXTRA:** Se valorará si los productos agregados al carrito se almacenan en `localStorage`.
+
+## Ejecución del Proyecto
+
+1. Clona el repositorio o descarga el código fuente.
+2. Abre el archivo `index.html` en tu navegador para ejecutar la aplicación.
+3. Asegúrate de tener todas las imágenes de frutas en la carpeta `img`.
