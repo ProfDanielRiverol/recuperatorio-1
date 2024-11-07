@@ -1,4 +1,4 @@
-# Parcial Programación III - Tienda de Frutas
+# Parcial Recuperatorio Programación III - Tienda de Frutas
 
 Este proyecto consiste en el desarrollo de un frontend para una tienda de frutas, como parte del examen parcial de la materia Programación III.
 
@@ -18,17 +18,16 @@ En este parcial, deberás construir el frontend de una tienda de frutas.
 2. Crear un array de objetos que representen las frutas, cada una con id, nombre, precio y ruta de imagen.
 3. Imprimir los productos en pantalla mediante una función, que deberá ser invocada en `init()`.
 4. Implementar una función de filtro, que se dispare al escribir en un campo input, filtrando los productos que coincidan.
-5. **EXTRA (opcional):** Implementar la funcionalidad de carrito.
+5. **EXTRA:** Implementar la funcionalidad de carrito.
 
 ## Puntos Detallados
 
 ### Punto 1: Array de Frutas
 
-Crea un array de 10 frutas, cada objeto debe tener las siguientes claves:
-- `id`: Identificador único.
-- `nombre`: Nombre de la fruta.
-- `precio`: Precio de la fruta.
-- `ruta`: Ruta de la imagen correspondiente en la carpeta `img`.
+Utiliza fetch para traer el listado de frutas desde esta url
+```
+https://my-json-server.typicode.com/ProfDanielRiverol/api-frutas/db
+```
 
 ### Punto 2: Datos del Alumno
 
@@ -52,10 +51,11 @@ Implementa una función que recorra el array de frutas y muestre cada producto e
 ### Punto 4: Filtro de Productos
 
 Escribe una función de filtro que capture los valores de un campo input (por ejemplo, mediante un evento `keyup`), y filtre los productos que coincidan con los valores introducidos.
+Escribe una función que filtre los productos por precio por ejemplo: Si ingreso el precio `5.5` el DOM debe mostrar todas frutas cuyo precio sea menor a `5.5`
 
-### Punto 5 EXTRA: Carrito de Compras
+### Punto 5: Carrito de Compras
 
-**(Opcional, solo si has completado los puntos anteriores)**
+**Si has completado los puntos anteriores**
 
 Implementa la funcionalidad de carrito de compras. **EXTRA:** Se valorará si los productos agregados al carrito se almacenan en `localStorage`.
 
@@ -63,4 +63,3 @@ Implementa la funcionalidad de carrito de compras. **EXTRA:** Se valorará si lo
 
 1. Clona el repositorio o descarga el código fuente.
 2. Abre el archivo `index.html` en tu navegador para ejecutar la aplicación.
-3. Asegúrate de tener todas las imágenes de frutas en la carpeta `img`.
