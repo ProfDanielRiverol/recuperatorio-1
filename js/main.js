@@ -16,7 +16,7 @@
 */
 
 /* PUNTO 1 _____________
-  Utiliza fetch para traer el listado de frutas desde esta url: 
+  Utiliza fetch para traer el listado de frutas desde esta url: https://my-json-server.typicode.com/ProfDanielRiverol/api-frutas/db
 */
 
 /* PUNTO 2 _____________
