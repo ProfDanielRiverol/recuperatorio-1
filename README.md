@@ -15,7 +15,7 @@ En este parcial, deberás construir el frontend de una tienda de frutas.
 ### Pasos a seguir:
 
 1. Almacenar tus datos personales en un objeto e imprimir tu nombre en el `<nav>` del HTML y en la consola.
-2. Crear un array de objetos que representen las frutas, cada una con id, nombre, precio y ruta de imagen.
+2. Utiliza `fetch` para traer el listado de frutas
 3. Imprimir los productos en pantalla mediante una función, que deberá ser invocada en `init()`.
 4. Implementar una función de filtro, que se dispare al escribir en un campo input, filtrando los productos que coincidan.
 5. **EXTRA:** Implementar la funcionalidad de carrito.
