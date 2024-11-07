@@ -50,8 +50,8 @@ Implementa una función que recorra el array de frutas y muestre cada producto e
 
 ### Punto 4: Filtro de Productos
 
-Escribe una función de filtro que capture los valores de un campo input (por ejemplo, mediante un evento `keyup`), y filtre los productos que coincidan con los valores introducidos.
-Escribe una función que filtre los productos por precio por ejemplo: Si ingreso el precio `5.5` el DOM debe mostrar todas frutas cuyo precio sea menor a `5.5`
+- Escribe una función de filtro que capture los valores de un campo input (por ejemplo, mediante un evento `keyup`), y filtre los productos que coincidan con los valores introducidos.
+- Escribe una función que filtre los productos por precio por ejemplo: Si ingreso el precio `5.5` el DOM debe mostrar todas frutas cuyo precio sea menor a `5.5`
 
 ### Punto 5: Carrito de Compras
 
